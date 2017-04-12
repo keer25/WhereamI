@@ -111,7 +111,8 @@ public class PuzzleActivity extends AppCompatActivity {
                                     Snackbar.make(parentView, display, Snackbar.LENGTH_SHORT).show();
                                 }
                                 if (countHash(foundHash) == 12) {
-                                    setContentView(R.layout.you_won);
+                                    Intent intent = new Intent(getApplicationContext(), WonActivity.class);
+                                    startActivity(intent);
                                 }
                             }
                             break;

@@ -19,7 +19,9 @@
             android:name=".PuzzleActivity"
             android:label="@string/title_activity_puzzle"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".WonActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
