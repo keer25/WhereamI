@@ -83,13 +83,6 @@ public class PuzzleActivity extends AppCompatActivity {
                     for (int i=0; i<colors.length; i++){
                         if(ct.closeMatch(colors[i], touchColor, tolerance)) {
                             if (foundHash.valueAt(i).size() != count[i]) {
-                                //trigger getView
-                                final int dummyi = i;
-                                spinner.post(new Runnable() {
-                                    public void run() {
-                                        spinner.setSelection(dummyi + 1);
-                                    }
-                                });
 
                                 if (coordHash.get(i).size() > 0) {
                                     Coordinate coordinate = compareClosestX(evX, evY, i);
@@ -110,6 +103,16 @@ public class PuzzleActivity extends AppCompatActivity {
                                     String display = "You Found " + displayItems[i];
                                     Snackbar.make(parentView, display, Snackbar.LENGTH_SHORT).show();
                                 }
+
+                                //trigger getView
+                                final int dummyi = i;
+                                spinner.post(new Runnable() {
+                                    public void run() {
+                                        spinner.setSelection(dummyi + 1);
+                                    }
+                                });
+
+                                Log.d("Sunshine", String.valueOf(countHash(foundHash)));
                                 if (countHash(foundHash) == 12) {
                                     Intent intent = new Intent(getApplicationContext(), WonActivity.class);
                                     startActivity(intent);
@@ -163,13 +166,13 @@ public class PuzzleActivity extends AppCompatActivity {
     }
 
     int countHash(SparseArray<ArrayList<Coordinate>> hash){
-        int count = 0;
+        int c = 0;
         for(int i=0; i<12; i++){
-            if (hash.get(i).size() == coordHash.get(i).size()) {
-                count += 1;
+            if (hash.get(i).size() == count[i]) {
+                c += 1;
             }
         }
-        return count;
+        return c;
     }
 
     void assignCoordHash() {

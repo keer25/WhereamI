@@ -42,7 +42,9 @@ public class CustomArrayAdapter extends ArrayAdapter<CharSequence> {
         for (ind = 0 ; ind<12 ; ind++){
             if (foundHash.valueAt(ind).size() != count[ind]) break;
         }
-        tv.setText(items[ind]);
+        if (ind != 12) {
+            tv.setText(items[ind]);
+        }
         return tv;
     }
 
