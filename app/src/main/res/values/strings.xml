@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Where am I?</string>
+    <string name="play">PLAY</string>
+    <string name="spinner_title_menu">Actionbar Spinner</string>
+    <string-array name="items">
+        <item>Earth, our home</item>
+        <item>The sun that gives warmth</item>
+        <item>Two swooping owls</item>
+        <item>One shy monkey</item>
+        <item>Five exploring ants</item>
+        <item>A hungry caterpillar</item>
+        <item>A butterfly wing</item>
+        <item>Two cats waiting</item>
+        <item>A pair of slippers</item>
+        <item>Four red Flowers</item>
+        <item>A book</item>
+        <item>A kite</item>
+    </string-array>
+
+    <string-array name="display">
+        <item>Earth, our home</item>
+        <item>The sun that gives warmth</item>
+        <item>A swooping owl</item>
+        <item>One shy monkey</item>
+        <item>An exploring ant</item>
+        <item>A hungry caterpillar</item>
+        <item>A butterfly wing</item>
+        <item>A cat</item>
+        <item>A slipper</item>
+        <item>A red flower</item>
+        <item>A book</item>
+        <item>A kite</item>
+    </string-array>
+
+    <string name="title_activity_puzzle">PuzzleActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="find_these">Find these!</string>
+    <string name="reset">RESET</string>
+    <string name="title">Where am I?</string>
+    <string name="story">This is a story about a girl learning about her planet and all the wonderful and magical creatures that she shares it with. She learns that her home is a small blue green planet, that looks like a marble and everything that lives on this marble is somehow connected!</string>
+    <string name="found">YOU FOUND ALL THE ITEMS!</string>
+    <string name="credits">Art and Content Credits : Sonali Zohra</string>
+    <string name="help">Find all the mentioned items in the picture</string>
+</resources>

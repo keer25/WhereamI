@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="earth">#00A2FF</color>
+    <color name="sun">#FFF000</color>
+    <color name="owl">#05BF05</color>
+    <color name="monkey">#FF6C00</color>
+    <color name="ant">#D8D8D8</color>
+    <color name="caterpillar">#000000</color>
+    <color name="butterfly">#FF00A8</color>
+    <color name="cat">#0000FF</color>
+    <color name="slipper">#87BD04</color>
+    <color name="flower">#FF0000</color>
+    <color name="book">#4800ff</color>
+    <color name="kite">#646464</color>
+
+    <array name="colors">
+        <item>@color/earth</item>
+        <item>@color/sun</item>
+        <item>@color/owl</item>
+        <item>@color/monkey</item>
+        <item>@color/ant</item>
+        <item>@color/caterpillar</item>
+        <item>@color/butterfly</item>
+        <item>@color/cat</item>
+        <item>@color/slipper</item>
+        <item>@color/flower</item>
+        <item>@color/book</item>
+        <item>@color/kite</item>
+    </array>
+</resources>
